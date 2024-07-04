@@ -1,4 +1,5 @@
-﻿using ApiFinShark.Models;
+﻿using ApiFinShark.Dtos.Comment;
+using ApiFinShark.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ApiFinShark.Dtos.Stocks
@@ -18,5 +19,7 @@ namespace ApiFinShark.Dtos.Stocks
         public string Industry { get; set; } = string.Empty;
 
         public long MarketCap { get; set; }
+        
+        public List<CommentDto> Comments { get; set; }
     }
 }
